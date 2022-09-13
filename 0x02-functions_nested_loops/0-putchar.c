@@ -1,4 +1,4 @@
-#include "juadeb.h"
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -6,12 +6,10 @@
  */
 int main(void)
 {
-	_putchar('J');
-	_putchar('u');
+	_putchar('M');
 	_putchar('a');
-	_putchar('d');
-	_putchar('e');
-	_putchar('b');
+	_putchar('i');
+	_putchar('n');
 	_putchar('\n');
 
 	return (0);
