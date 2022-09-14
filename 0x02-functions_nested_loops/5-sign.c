@@ -1,28 +1,29 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
 * print_sign - checks for integer sign
-* @n: integer to check
+* @c: integer to check
 *
 * Return: 0 or 1
 */
 
-int print_sign(int n)
+
+int print_sign(int c)
 {
-	if (n > 0)
+	if (c > 0)
 	{
-		_putchar(43);
+		_putchar ('+');
 		return (1);
 	}
-	else if (n == 0)
+	else if (c == 0)
 	{
-		_putchar(48);
+		_putchar('0');
 		return (0);
 	}
 	else
 	{
-		_putchar(45);
+		_putchar('-');
 		return (-1);
 	}
+	putchar('\n');
 }
