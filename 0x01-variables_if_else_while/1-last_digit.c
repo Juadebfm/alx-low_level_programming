@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
+ * main - Determine if the last digit of a random number is
+ * greater than or less than 5, or is zero..
  *
- *  * main - assign a random number to the variable n each time it is executed
- *   * The string Last digit of n
- *    * Return: 0
+ * Return: 0 on success
  */
 int main(void)
 {
