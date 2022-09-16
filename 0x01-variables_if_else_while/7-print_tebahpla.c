@@ -1,17 +1,9 @@
 #include <stdio.h>
-
-
-
 /**
-
-  * main - Prints the alphabet at reverse
-
-  *
-
-  * Return: Always (Success)
-
-  */
-
+ * main - Prints the alphabet at reverse
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 
 {
