@@ -7,6 +7,7 @@
 int main(void)
 {
 	int lw = 'a';
+
 	while (lw <= 'z')
 	{
 		if (lw == 'e' || lw == 'q')
