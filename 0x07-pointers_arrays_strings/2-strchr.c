@@ -5,8 +5,8 @@
  * @s: source string
  * @c: character to find
  *
- * Return: the string from the character found
- */
+ * Return: the string from character found
+*/
 char *_strchr(char *s, char c)
 {
 	int a = 0, b;
@@ -25,5 +25,5 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-	return (ʻ\nʻ);
+	return ('\0');
 }
