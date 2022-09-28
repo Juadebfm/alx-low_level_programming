@@ -22,7 +22,7 @@ int palind2(char *a, int l)
  * Return: On success 1.
 * On error, -1 is returned, and errno is set appropriately.
 */
-nt palind3(char *a, int l)
+int palind3(char *a, int l)
 {
 	if (*a != *(a + l))
 		return (0);
