@@ -27,9 +27,9 @@ int **alloc_grid(int width, int height)
 		if (!matrix[row])
 		{
 			while (--row > -1)
-					free(matrix[row]);
-				free(matrix);
-				return (NULL);
+				free(matrix[row]);
+			free(matrix);
+			return (NULL);
 		}
 
 		for (column = 0; column < width; ++column)
