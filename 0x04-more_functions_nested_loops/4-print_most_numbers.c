@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * print_most_numbers - checks for checks for a digit (0 through 9).
- *
- * Return: Always 0.
- */
+ * print_most_numbers - Print numbers 0 to 9, excluding 2 and 4.
+ * Description: Can only use _putchar twice.
+*/
 void print_most_numbers(void)
 {
-	int a;
+	int i;
 
-	for (a = 48; a < 58; a++)
+	i = 0;
+	while (i < 10)
 	{
-		if (a != 50)
-		{
-			if (a != 50)
-			{
-			_putchar(a);
-			}
-		}
+		if (i != 2 && i != 4)
+			_putchar(i + '0');
+
+		i++;
 	}
 	_putchar('\n');
 }
