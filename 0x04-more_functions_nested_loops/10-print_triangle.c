@@ -1,34 +1,33 @@
 #include "main.h"
 
 /**
- * print_triangle - checks for checks for a digit (0 through 9).
- * @size: size - Variable
- * Return: Always 0.
- */
+ * print_triangle - print a triangle aligned right, using '#'
+* @size: Size of triangle
+*/
 void print_triangle(int size)
 {
-	int x, y;
+	int c, i, j;
 
-	if (size > 0)
+	c = 0;
+	i = size - 1;
+	while (c < size)
 	{
-		for (x = 1; x <= size; x++)
+		i = size - 1 - c;
+		j = c + 1;
+		while (i > 0)
 		{
-			for (y = 1; y <= size; y++)
-			{
-				if (y <= size - x)
-				{
-					-putchar(' ');
-				}
-				else
-				{
-					_putchar('#');
-				}
-			}
-			_putchar('\n');
+			_putchar(' ');
+			i--;
 		}
-	}
-	else
-	{
+		while (j > 0)
+		{
+			_putchar('#');
+			j--;
+		}
 		_putchar('\n');
+		c++;
 	}
+	
+	if (size <= 0)
+		_putchar('\n');
 }
